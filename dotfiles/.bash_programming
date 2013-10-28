@@ -46,8 +46,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias ipy="ipython"
 
 ### custom
-PATH=~/Dropbox/github/my/utility/src:$PATH
-source ~/Dropbox/github/my/utility/src/comp
+
+PATH=/Users/satouhayabusa/git/my/utility/src:$PATH
+source /Users/satouhayabusa/git/my/utility/src/comp
 alias ser='python -m CGIHTTPServer'
 
 ### mongodb
