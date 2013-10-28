@@ -7,16 +7,11 @@ SYMLINK_LIST="
 .bashrc
 .gitconfig
 .gitignore_global
+.ticrc
+.mongorc.js
 "
 
 DOTFILES_PATH=$(cd $(dirname $0);pwd)
-
-BIN_PATH=$DOTFILES_PATH/bin
-BIN_LIST=`ls $BIN_PATH`
-for FILE in $BIN_LIST;
-do
-    chmod +x $BIN_PATH/$FILE
-done
 
 for FILE in $SYMLINK_LIST;
 do
