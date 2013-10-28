@@ -18,9 +18,13 @@ def install(target='all'):
         if not is_command_exist('brew'):
             local('ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"')
             local('brew update')
-            local('brew install bash-completion go imagemagick libmemcached lv node phantomjs python3 readline tig xz '
-                  'git gradle jpeg memcached mysql qt redis tree '
-                  'autoconf groonga libevent libtool mongodb nginx rbenv ruby-build sqlite ')
+
+            for item in ['bash-completion', 'go', 'imagemagick', 'libmemcached',
+                         'lv', 'node', 'python3', 'readline', 'tig', 'xz',
+                         'git', 'gradle', 'jpeg', 'memcached', 'mysql', 'redis', 'tree',
+                         'autoconf', 'groonga', 'libevent', 'libtool', 'mongodb', 'nginx', 'rbenv', 'ruby-build', 'sqlite', 'phantomjs', 'qt']:
+                local('brew install {0}'.format(item))
+                local('sudo pip-3.3 install virtualenv virtualenvwrapper')
 
         def rbenv():
             local('rbenv install 2.0.0-p247')
@@ -35,9 +39,10 @@ def install(target='all'):
         rbenv()
 
     def python():
-        local('sudo easy_install pip')
-        local('sudo pip install virtualenv virtualenvwrapper')
-        local('sudo pip install sphinx fabric')
+        if not is_command_exist('pip'):
+            local('sudo easy_install pip')
+            local('sudo pip install virtualenv virtualenvwrapper')
+            local('sudo pip install sphinx fabric')
 
     def my_setting():
         with cd(git_dir):
