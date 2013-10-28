@@ -25,7 +25,6 @@ else
 fi
 ### end git
 
-
 pylint_path=/usr/local/bin
 export PATH=$PATH:/usr/local/bin
 
@@ -47,14 +46,13 @@ alias ipy="ipython"
 
 ### custom
 
-PATH=/Users/satouhayabusa/git/my/utility/src:$PATH
-source /Users/satouhayabusa/git/my/utility/src/comp
+export PATH=$PATH:~/git/my/utility/src
+source ~/git/my/utility/src/comp
 alias ser='python -m CGIHTTPServer'
 
 ### mongodb
-MONGODB_PATH=/Users/satouhayabusa/mongo/bin/
-PATH=$MONGODB_PATH:$PATH
-
+MONGODB_PATH=~/mongo/bin/
+export PATH=$MONGODB_PATH:$PATH
 
 ## gradle
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"

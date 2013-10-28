@@ -24,7 +24,6 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/shims:$PATH"
-export PATH=/Users/satouhayabusa/.nodebrew/current/bin:/Users/satouhayabusa/.rbenv/shims:/Users/satouhayabusa/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/satouhayabusa/mongo/bin/:/Users/satouhayabusa/Dropbox/github/my/utility/src:/usr/local/Cellar/giter8/0.4.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/bin:/Users/satouhayabusa/bin/android-sdk-mac_x86/tools:/Users/satouhayabusa/bin/android-sdk-mac_x86/platform-tools
 
 ## mecab
 export PATH=/usr/local/bin/mecab/bin:$PATH

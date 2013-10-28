@@ -7,7 +7,7 @@ SYMLINK_LIST="
 .bashrc
 .gitconfig
 .gitignore_global
-.ticrc
+.tigrc
 .mongorc.js
 "
 
