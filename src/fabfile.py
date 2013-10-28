@@ -22,7 +22,7 @@ def install(target='all'):
             for item in ['bash-completion', 'go', 'imagemagick', 'libmemcached',
                          'lv', 'node', 'python3', 'readline', 'tig', 'xz',
                          'git', 'gradle', 'jpeg', 'memcached', 'mysql', 'redis', 'tree',
-                         'autoconf', 'groonga', 'libevent', 'libtool', 'mongodb', 'nginx', 'rbenv', 'ruby-build', 'sqlite', 'phantomjs', 'qt']:
+                         'autoconf', 'groonga', 'mongodb', 'nginx', 'rbenv', 'ruby-build', 'sqlite', 'phantomjs', 'qt']:
                 local('brew install {0}'.format(item))
                 local('sudo pip-3.3 install virtualenv virtualenvwrapper')
 
@@ -31,13 +31,12 @@ def install(target='all'):
             local('rbenv rehash')
             local('rbenv local 2.0.0-p247')
 
-        def nodebrew():
-            local('curl -L git.io/nodebrew | perl - setup')
-            local('source ~/.bash_profile')
-            local('nodebrew install v0.6.0')
-
         rbenv()
-        nodebrew()
+
+    def nodebrew():
+        local('curl -L git.io/nodebrew | perl - setup')
+        local('source ~/.bash_profile')
+        local('nodebrew install v0.6.0')
 
     def python():
         if not is_command_exist('pip'):
