@@ -1,7 +1,7 @@
-from fabric.api import local, tasks
+from fabric.api import local, task
 
 
-@tasks
+@task
 def install():
     local('ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"')
     local('brew install apple-gcc42  bash-completion docbook-xsl gettext go imagemagick libmemcached lv msgpack node phantomjs python3 readline scons tig xz '
