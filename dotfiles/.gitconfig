@@ -1,0 +1,46 @@
+[user]
+	name = SatoShun
+	email = shun.sato1@gmail.com
+[core]
+    excludesfile = ~/.gitignore
+    editor = /usr/bin/vim
+    excludesfile = ~/.gitignore_global
+
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    grep = auto
+    ui = auto
+[push]
+    default = current
+[alias]
+    st = stash
+    co = checkout
+    ci = commit -v
+    di = diff
+    br = branch -v -v
+    puhs = push
+    psuh = push
+    pus = push
+    puh = push
+    pl = !git pull && git submodule update --init
+    com = checkout master
+    both-added-head = !sh ~/SkyDrive/repository/git/both_added_head.sh
+    pp = git
+    cm = commit -m
+    delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+    amend = commit --amend -C HEAD
+    in = init --separate-git-dir
+[rerere]
+    enabled = true
+[branch]
+    autosetuprebase = always
+[commit]
+	cleanup = whitespace

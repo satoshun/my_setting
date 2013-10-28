@@ -1,0 +1,16 @@
+alias git-conflict='git status | python ~/SkyDrive/repository/utility/git/git_conflict_open.py'
+alias git-untracked-delete='git status | python ~/SkyDrive/repository/utility/git/git_untracked_delete.py'
+
+alias cl='clear'
+alias l='ls'
+alias ll='ls -l'
+alias sub='open -a "Sublime Text"'
+alias sub2='open -a "Sublime Text 2"'
+alias gst="git status"
+alias p="pwd"
+alias pypi="python setup.py register; python setup.py sdist upload"
+alias pypi3="python3 setup.py register; python3 setup.py sdist upload"
+
+EDITOR='Sublime Text 2'
+
+alias ctags="`brew --prefix`/bin/ctags"
