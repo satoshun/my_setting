@@ -45,8 +45,7 @@ def install(target='all'):
             local('sudo pip install sphinx fabric')
 
     def my_setting():
-        with cd(git_dir):
-            local('git clone git@github.com:satoshun/utility.git')
+        local('git clone git@github.com:satoshun/utility.git {0}/utility'.format(git_dir))
 
     if target == 'all':
         for name, func in locals().items():
