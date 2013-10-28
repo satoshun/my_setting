@@ -37,6 +37,7 @@ def install(target='all'):
             local('nodebrew install v0.6.0')
 
         rbenv()
+        nodebrew()
 
     def python():
         if not is_command_exist('pip'):
