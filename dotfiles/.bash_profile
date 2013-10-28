@@ -1,5 +1,4 @@
 . ~/.bash_common
-. ~/.bash_inblue
 . ~/.bash_programming
 
 ##
