@@ -21,3 +21,6 @@ def install(target='all'):
             if callable(func):
                 print(blue('call: ' + name))
                 func()
+    else:
+        print(blue('call: ' + target))
+        locals()[target]()
