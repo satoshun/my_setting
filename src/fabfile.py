@@ -4,7 +4,7 @@ from fabric.colors import blue
 import os
 
 dev_null = open(os.devnull, 'w')
-git_dir = '/Users/satouhayabusa/git/my'
+git_dir = '~/git/my'
 
 
 def is_command_exist(command):
@@ -47,6 +47,16 @@ def install(target='all'):
 
     def my_setting():
         local('git clone git@github.com:satoshun/utility.git {0}/utility'.format(git_dir))
+
+    def sublime():
+        sublime_dir = '~/Library/Application Support/Sublime\ Text\ 3'
+        sym_sublime_dir = '~/SkyDrive/preference/Sublime\ Text\ 3'
+
+        local('rm -rf {0}/Installed\ Packages'.format(sublime_dir))
+        local('rm -rf {0}/Packages'.format(sublime_dir))
+
+        local('ln -s {0}/Installed\ Packages {1}/Installed\ Packages'.format(sublime_dir, sym_sublime_dir))
+        local('ln -s {0}/Packages {1}/Packages'.format(sublime_dir, sym_sublime_dir))
 
     if target == 'all':
         for name, func in locals().items():
