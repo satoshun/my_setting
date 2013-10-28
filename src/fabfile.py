@@ -18,9 +18,9 @@ def install(target='all'):
         if not is_command_exist('brew'):
             local('ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"')
             local('brew update')
-            local('brew install apple-gcc42  bash-completion docbook-xsl gettext go imagemagick libmemcached lv msgpack node phantomjs python3 readline scons tig xz '
-                  'asciidoc cmake freetype git gradle jpeg libpng memcached mysql openssl pkg-config qt redis shiboken tree '
-                  'autoconf docbook gdbm gnu-getopt groonga libevent libtool mongodb nginx pcre python rbenv ruby-build sqlite xmlto ')
+            local('brew install bash-completion go imagemagick libmemcached lv node phantomjs python3 readline tig xz '
+                  'git gradle jpeg memcached mysql qt redis tree '
+                  'autoconf groonga libevent libtool mongodb nginx rbenv ruby-build sqlite ')
 
         def rbenv():
             local('rbenv install 2.0.0-p247')
@@ -44,7 +44,7 @@ def install(target='all'):
             local('git clone git@github.com:satoshun/utility.git')
 
     if target == 'all':
-        for name, func in locals():
+        for name, func in locals().items():
             if callable(func):
                 print(blue('call: ' + name))
                 func()
