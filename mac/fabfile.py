@@ -26,12 +26,10 @@ def install(target='all'):
                 local('brew install {0}'.format(item))
                 local('sudo pip-3.3 install virtualenv virtualenvwrapper')
 
-        def rbenv():
-            local('rbenv install 2.0.0-p247')
-            local('rbenv rehash')
-            local('rbenv local 2.0.0-p247')
-
-        rbenv()
+    def rbenv():
+        local('rbenv install 2.0.0-p247')
+        local('rbenv rehash')
+        local('rbenv local 2.0.0-p247')
 
     def nodebrew():
         local('curl -L git.io/nodebrew | perl - setup')
