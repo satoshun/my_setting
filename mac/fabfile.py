@@ -1,4 +1,4 @@
-from fabric.api import local, task, cd
+from fabric.api import local, task,
 from fabric.colors import blue
 
 import os
@@ -30,11 +30,12 @@ def install(target='all'):
         local('rbenv install 2.0.0-p247')
         local('rbenv rehash')
         local('rbenv local 2.0.0-p247')
+        local('sudo gem install bundler')
 
     def nodebrew():
         local('curl -L git.io/nodebrew | perl - setup')
         local('source ~/.bash_profile')
-        local('nodebrew install v0.6.0')
+        local('nodebrew install v0.10.x')
 
     def python():
         if not is_command_exist('pip'):
