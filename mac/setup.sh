@@ -2,14 +2,14 @@
 
 sublime()
 {
-    sublimeDir='~/Library/Application Support/Sublime\ Text\ 3'
-    symSublimeDir='~/SkyDrive/preference/Sublime\ Text\ 3'
+    sublimeDir=~/Library/Application\ Support/Sublime\ Text\ 3
+    symSublimeDir=~/SkyDrive/preference/Sublime\ Text\ 3
 
-    rm -rf ${sublimeDir}/Installed\ Packages
-    rm -rf ${sublimeDir}/Packages
+    rm -rf "${sublimeDir}/Installed\ Packages"
+    rm -rf "${sublimeDir}/Packages"
 
-    ln -s ${sublimeDir}/Installed\ Packages ${symSublimeDir}/Installed\ Packages
-    ln -s ${sublimeDir}/Packages ${symSublimeDir}/Packages
+    ln -s "${symSublimeDir}/Installed\ Packages" "${sublimeDir}/Installed\ Packages"
+    ln -s "${symSublimeDir}/Packages" "${sublimeDir}/Packages"
 }
 
 sublime
