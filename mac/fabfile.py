@@ -1,4 +1,4 @@
-from fabric.api import local, task,
+from fabric.api import local, task
 from fabric.colors import blue
 
 import os
@@ -41,7 +41,7 @@ def install(target='all'):
         if not is_command_exist('pip'):
             local('sudo easy_install pip')
             local('sudo pip install virtualenv virtualenvwrapper')
-            local('sudo pip install sphinx fabric')
+            local('sudo pip install sphinx sphinxcontrib-blockdiag')
 
     def my_setting():
         local('git clone git@github.com:satoshun/utility.git {0}/utility'.format(git_dir))

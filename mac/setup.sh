@@ -12,7 +12,13 @@ sublime()
     ln -s "${symSublimeDir}/Packages" "${sublimeDir}/Packages"
 }
 
+python()
+{
+    sudo pip install fabric
+}
+
 sublime
+python
 
 # if [ !type pip ]; then
 # fi
