@@ -26,6 +26,8 @@ def install(target='all'):
                 local('brew install {0}'.format(item))
                 local('sudo pip-3.3 install virtualenv virtualenvwrapper')
 
+            local('brew install "http://toolbelt.treasure-data.com/brew/td-agent.rb"')
+
     def rbenv():
         local('rbenv install 2.0.0-p247')
         local('rbenv rehash')
