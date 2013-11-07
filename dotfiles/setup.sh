@@ -9,9 +9,11 @@ SYMLINK_LIST="
 .gitignore_global
 .tigrc
 .mongorc.js
+.codeintel/config
 "
 
 DOTFILES_PATH=$(cd $(dirname $0);pwd)
+mkdir -p ~/.codeintel
 
 for FILE in $SYMLINK_LIST;
 do
