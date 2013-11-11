@@ -1,7 +1,15 @@
 #!/bin/sh
 
+CURRENT_PATH=$(cd $(dirname $0);pwd)
+
 # mongo
-rm /usr/local/etc/mongod.conf
-rm ~/Library/LaunchAgents/mongod.plist
-ln -s mongod/mongod.conf /usr/local/etc/mongod.conf
-ln -s mongod/mongod.plist ~/Library/LaunchAgents/mongod.plist
+if [ -e "/usr/local/etc/mongod.conf" ]; then
+    rm /usr/local/etc/mongod.conf
+fi
+
+if [ -e "~/Library/LaunchAgents/mongod.plist" ]; then
+    rm ~/Library/LaunchAgents/mongod.plist
+fi
+
+ln -s -f ${CURRENT_PATH}/mongod/mongod.conf /usr/local/etc
+ln -s -f ${CURRENT_PATH}/mongod/mongod.plist ~/Library/LaunchAgents
