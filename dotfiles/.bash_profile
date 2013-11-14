@@ -1,3 +1,5 @@
+export LANG=en_US.UTF-8
+
 . ~/.bash_common
 . ~/.bash_programming
 
