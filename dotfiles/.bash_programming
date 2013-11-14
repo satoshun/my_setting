@@ -66,3 +66,6 @@ export PATH=/opt/chef/embedded/bin:$PATH
 
 ## go
 export GOPATH=/usr/local/bin
+
+##
+export LANG=en_US.UTF-8
