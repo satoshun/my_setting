@@ -67,5 +67,6 @@ export PATH=/opt/chef/embedded/bin:$PATH
 ## go
 export GOPATH=/usr/local/bin
 
-## ansible
+## ansible & vagrant
 export ANSIBLE_HOSTS=~/ansible_hosts
+export PATH=~/git/my/etc/my_setting/vagrant/:$PATH
