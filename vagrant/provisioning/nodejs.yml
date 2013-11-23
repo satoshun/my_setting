@@ -1,0 +1,7 @@
+---
+- name: install nodebrew
+  command: wget git.io/nodebrew && perl nodebrew setup
+- name: echo bashrc
+  command: echo export PATH=\$HOME/.nodebrew/current/bin:\$PATH >> ~/.bashrc
+- name: install nodejs
+  command: nodebrew install v0.10.22

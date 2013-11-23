@@ -1,0 +1,7 @@
+---
+- name: install mysql
+  yum: name=$item state=latest
+  with_items:
+    - mysql
+    - mysql-server
+    - mysql-devel

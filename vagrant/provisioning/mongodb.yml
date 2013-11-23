@@ -1,0 +1,6 @@
+---
+- copy: src=mongod.repo dest=/etc/yum.repos.d/mongod.repo
+- yum: name=mongo-10gen state=present
+- yum: name=mongo-10gen-server state=present
+- service: name=mongod state=started enabled=yes
+# - command: npm install -g mongo-hacker

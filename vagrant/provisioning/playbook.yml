@@ -1,0 +1,16 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: yes
+
+  tasks:
+    - name: install base
+      yum: name=$item state=latest
+      with_items:
+        - git
+
+    - include: td-agent.yml
+    - include: mysql.yml
+    - include: nodejs.yml
+    - include: nginx.yml
+    - include: mongodb.yml
