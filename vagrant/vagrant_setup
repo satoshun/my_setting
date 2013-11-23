@@ -1,0 +1,10 @@
+#!/bin/sh
+
+VAGRANT_PATH=$(cd $(dirname $0);pwd)
+CUR_NAME=`pwd`
+
+echo copy file ${CUR_NAME}/Vagrantfile
+cp ${CUR_NAME}/Vagrantfile ${VAGRANT_PATH}/
+
+echo copy directory ${CUR_NAME}/provisioning/
+cp -r ${CUR_NAME}/provisioning ${VAGRANT_PATH}/
