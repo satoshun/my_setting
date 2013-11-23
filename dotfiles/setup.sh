@@ -9,6 +9,7 @@ SYMLINK_LIST="
 .gitignore_global
 .tigrc
 .mongorc.js
+.my.cnf
 .codeintel/config
 "
 
