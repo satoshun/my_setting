@@ -26,7 +26,7 @@
     - include: td-agent.yml
     - include: fluent-agent-lite.yml
     - include: mysql.yml
-    # - include: nodejs.yml
+    - include: nodejs.yml
     - include: python.yml
     - include: nginx.yml
     - include: mongodb.yml
