@@ -19,7 +19,7 @@
         - ncurses-devel
         - sqlite-devel
         - readline-devel
-        - libevent-dev
+        - libevent-devel
         - tk-devel
         - python-setuptools
 
