@@ -6,5 +6,8 @@ CUR_NAME=`pwd`
 echo copy file ${CUR_NAME}/Vagrantfile
 cp ${VAGRANT_PATH}/Vagrantfile ${CUR_NAME}/
 
+echo copy file ${CUR_NAME}/hosts
+cp ${VAGRANT_PATH}/hosts ${CUR_NAME}/
+
 echo copy directory ${CUR_NAME}/provisioning/
 cp -r ${VAGRANT_PATH}/provisioning ${CUR_NAME}/
