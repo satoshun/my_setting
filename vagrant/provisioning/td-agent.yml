@@ -1,4 +1,4 @@
 ---
 - copy: src=td.repo dest=/etc/yum.repos.d/td.repo
-- yum: name=td-agent state=present
+- yum: name=td-agent state=latest
 - service: name=td-agent state=started enabled=yes

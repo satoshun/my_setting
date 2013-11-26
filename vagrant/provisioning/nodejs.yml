@@ -1,7 +1,11 @@
 ---
 - name: install nodebrew
-  command: wget git.io/nodebrew && perl nodebrew setup
+  shell: >
+    curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
+    chdir=tmp
+
 - name: echo bashrc
-  command: echo export PATH=\$HOME/.nodebrew/current/bin:\$PATH >> ~/.bashrc
+  shell: echo export 'PATH=\$HOME/.nodebrew/current/bin:\$PATH' >> .bashrc
+
 - name: install nodejs
   command: nodebrew install v0.10.22

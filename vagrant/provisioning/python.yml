@@ -1,1 +1,21 @@
 ---
+- name: install pip
+  command: easy_install pip
+
+- name: install virtualenv
+  command: pip install virtualenv virtualenvwrapper
+
+- name: wget python3
+  get_url: >
+    url=http://python.org/ftp/python/3.3.3/Python-3.3.3.tgz
+    dest=tmp/
+
+- name: tar python3
+  command: >
+    tar zxvf Python-3.3.3.tgz
+    chdir=tmp
+
+- name: install python3
+  shell: >
+    ./configure --with-zlib=/usr/include --with-ssl --with-bz2 && make && make install
+    chdir=tmp/Python-3.3.3

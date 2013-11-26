@@ -4,13 +4,29 @@
   sudo: yes
 
   tasks:
+    - name: "mkdir tmp"
+      file: dest=tmp state=directory
+
     - name: install base
       yum: name=$item state=latest
       with_items:
         - git
+        - perl-devel
+        - zlib-devel
+        - bzip2-devel
+        - openssl
+        - openssl-devel
+        - ncurses-devel
+        - sqlite-devel
+        - readline-devel
+        - libevent-dev
+        - tk-devel
+        - python-setuptools
 
     - include: td-agent.yml
+    - include: fluent-agent-lite.yml
     - include: mysql.yml
-    - include: nodejs.yml
+    # - include: nodejs.yml
+    - include: python.yml
     - include: nginx.yml
     - include: mongodb.yml

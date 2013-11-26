@@ -1,0 +1,8 @@
+---
+- name: git clone fluent-agent-lite
+  git: repo=https://github.com/tagomoris/fluent-agent-lite.git
+       dest=tmp/fluent-agent-lite
+- name: install fluent-agent-lite
+  shell: >
+    bin/install.sh
+    chdir=tmp/fluent-agent-lite
