@@ -9,5 +9,5 @@ cp ${VAGRANT_PATH}/Vagrantfile ${CUR_NAME}/
 echo copy file ${CUR_NAME}/hosts
 cp ${VAGRANT_PATH}/hosts ${CUR_NAME}/
 
-echo copy directory ${CUR_NAME}/provisioning/
-cp -r ${VAGRANT_PATH}/provisioning ${CUR_NAME}/
+echo ln directory ${CUR_NAME}/provisioning/
+ln -s ${VAGRANT_PATH}/provisioning ${CUR_NAME}/provisioning
