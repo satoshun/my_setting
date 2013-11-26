@@ -1,15 +1,15 @@
 ---
-- name: install nodejs
+- name: get nodejs
   get_url: >
-    url=http://nodejs.org/dist/v0.10.22/node-v0.10.22-linux-x64.tar.gz
-    chdir=tmp
+    url=http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
+    dest=tmp/
 
 - name: tar nodejs
   command: >
-    tar zxvf node-v0.10.22-linux-x64.tar.gz
+    tar zxvf node-v0.10.22.tar.gz
     chdir=tmp
 
 - name: install nodejs
   shell: >
     ./configure && make && make install
-    chdir=tmp/node-v0.10.22-linux-x64
+    chdir=tmp/node-v0.10.22
