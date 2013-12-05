@@ -3,7 +3,7 @@ function current_branch() {
   echo ${ref#refs/heads/}
 }
 
-# git relation
+# start git
 alias github_pull_request_open='git status | ~/SkyDrive/repository/utility/web/github_pull_request_open'
 alias ggpull='git pull origin $(current_branch)'
 alias gl='git pull'
@@ -23,10 +23,12 @@ if [ -f $BASH_COMPLETION_DIR/git-completion.bash ]; then
 else
     PS1='\[\e[0;37m\]${NAME}\[\e[0;37m\][\t]\[\e[0;37m\]: \[\e[1;37m\]\w\n\[\e[1;33m\]h:\! j:\j \[\e[0;34m\]\$\[\e[m\] '
 fi
+
 ### end git
 
-pylint_path=/usr/local/bin
+### basic
 export PATH=$PATH:/usr/local/bin
+export HISTSIZE=2000
 
 ### android
 export PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ Studio.app/sdk/platform-tools
@@ -40,6 +42,8 @@ alias q='exit'
 ### python
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export pylint_path=/usr/local/bin
+
 # export LD_LIBRARY_PATH=/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/PySide-1.3.0dev-py3.3.egg/PySide
 export LDFLAGS=-L/usr/local/lib/
 export CFLAGS=-I/usr/local/include/
