@@ -11,6 +11,7 @@ SYMLINK_LIST="
 .mongorc.js
 .my.cnf
 .codeintel/config
+.gradle
 "
 
 DOTFILES_PATH=$(cd $(dirname $0);pwd)
