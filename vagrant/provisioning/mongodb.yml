@@ -3,4 +3,4 @@
 - yum: name=mongo-10gen state=latest
 - yum: name=mongo-10gen-server state=latest
 - service: name=mongod state=started enabled=yes
-# - command: npm install -g mongo-hacker
+- command: npm install -g mongo-hacker
