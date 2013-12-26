@@ -44,3 +44,8 @@
     autosetuprebase = always
 [commit]
 	cleanup = whitespace
+[mergetool "sublime"]
+	cmd = sub -w $MERGED
+	trustExitCode = false
+[merge]
+	tool = sublime
