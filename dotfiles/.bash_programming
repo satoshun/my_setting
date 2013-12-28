@@ -9,6 +9,9 @@ alias ggpull='git pull origin $(current_branch)'
 alias gl='git pull'
 alias ggpush='git push origin $(current_branch)'
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
+alias gst="git status"
+alias gsp="git stash pop"
+alias gsa="git stash"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
