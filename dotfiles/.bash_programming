@@ -42,12 +42,12 @@ alias q='exit'
 ### python
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source `which virtualenvwrapper.sh`
 export pylint_path=/usr/local/bin
 
 # export LD_LIBRARY_PATH=/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/PySide-1.3.0dev-py3.3.egg/PySide
 export LDFLAGS=-L/usr/local/lib/
 export CFLAGS=-I/usr/local/include/
-source /usr/local/bin/virtualenvwrapper.sh
 alias ipy="ipython"
 
 ### custom
