@@ -12,6 +12,7 @@ SYMLINK_LIST="
 .my.cnf
 .codeintel/config
 .gradle
+.agignore
 "
 
 DOTFILES_PATH=$(cd $(dirname $0);pwd)
