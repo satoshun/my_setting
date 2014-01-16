@@ -48,6 +48,17 @@ def install(target='all'):
     def my_setting():
         local('git clone git@github.com:satoshun/utility.git {0}/utility'.format(git_dir))
 
+    def dmg():
+        # https://github.com/phinze/homebrew-cask
+        local('brew tap phinze/cask')
+        local('brew install brew-cask')
+        for package in [
+            'google-chrome', 'dropbox', 'skydrive', 'skype', 'sourcetree',
+            'android-studio', 'hipchat', 'virtualbox', 'vagrant', 'xtrafinder',
+            'iterm2', 'java', 'alfred', 'dash', 'evernote', 'firefox', 'bettertouchtool',
+            'keyremap4macbook']:
+            local('brew cask install {0}'.format(package))
+
     if target == 'all':
         for name, func in locals().items():
             if callable(func):

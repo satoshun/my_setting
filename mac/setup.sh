@@ -12,13 +12,13 @@ sublime()
     ln -s "${symSublimeDir}/Packages" "${sublimeDir}/Packages"
 }
 
-python()
+xcode()
 {
-    sudo pip install fabric
+    ln -s ~/git/my/etc/my_setting/mac/Xcode/KeyBindings /Users/satouhayabusa/Library/Developer/Xcode/UserData/KeyBindings
 }
 
 sublime
-python
+xcode
 
 # if [ !type pip ]; then
 # fi
