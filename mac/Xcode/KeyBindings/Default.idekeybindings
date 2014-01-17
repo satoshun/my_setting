@@ -254,6 +254,8 @@
 		<dict>
 			<key>@d</key>
 			<string>selectWord:</string>
+			<key>^z</key>
+			<string>pageUp:</string>
 		</dict>
 		<key>Version</key>
 		<integer>3</integer>
