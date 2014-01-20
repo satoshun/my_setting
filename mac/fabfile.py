@@ -56,7 +56,7 @@ def install(target='all'):
             'google-chrome', 'dropbox', 'skydrive', 'skype', 'sourcetree',
             'android-studio', 'hipchat', 'virtualbox', 'vagrant', 'xtrafinder',
             'iterm2', 'java', 'alfred', 'dash', 'evernote', 'firefox', 'bettertouchtool',
-            'keyremap4macbook']:
+            'keyremap4macbook', 'google-web-designer']:
             local('brew cask install {0}'.format(package))
 
     if target == 'all':
