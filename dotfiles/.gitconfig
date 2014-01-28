@@ -31,6 +31,7 @@
     pus = push
     puh = push
     pl = !git pull && git submodule update --init
+    plc = !git pull origin $current_branch
     com = checkout master
     both-added-head = !sh ~/SkyDrive/repository/git/both_added_head.sh
     pp = git
