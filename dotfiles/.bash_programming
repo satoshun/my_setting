@@ -7,6 +7,7 @@ function current_branch() {
 alias github_pull_request_open='git status | ~/SkyDrive/repository/utility/web/github_pull_request_open'
 alias ggpull='git pull origin $(current_branch)'
 alias gl='git pull'
+alias glc='git pull origin $(current_branch)'
 alias ggpush='git push origin $(current_branch)'
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 alias gst="git status"
