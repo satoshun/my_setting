@@ -77,8 +77,8 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 ## chef
 export PATH=/opt/chef/embedded/bin:$PATH
 
-## go
-export GOPATH=/usr/local/bin
+## golang
+export GOPATH=/usr/local/opt/go
 
 ## ansible & vagrant
 export ANSIBLE_HOSTS=~/ansible_hosts
