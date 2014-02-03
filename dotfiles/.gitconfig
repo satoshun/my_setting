@@ -8,7 +8,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -39,6 +39,19 @@
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
     amend = commit --amend -C HEAD
     in = init --separate-git-dir
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
+    ls = log --oneline --decorate
+    lh = log --graph
+    la = !git lh --date-order --all 2> /dev/null
+    lb = log --graph --simplify-by-decoration
+    lba = !git lb --all
+    h = !git --no-pager log --graph -n 15
+    a = !git --no-pager la -n 15
 [rerere]
     enabled = true
 [branch]
