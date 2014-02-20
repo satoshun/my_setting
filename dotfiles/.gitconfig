@@ -52,6 +52,8 @@
     lba = !git lb --all
     h = !git --no-pager log --graph -n 15
     a = !git --no-pager la -n 15
+    sp = stash pop
+    fix = commit --amend
 [rerere]
     enabled = true
 [branch]
