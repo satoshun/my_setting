@@ -13,6 +13,7 @@ SYMLINK_LIST="
 .codeintel/config
 .gradle
 .agignore
+.jshintrc
 "
 
 DOTFILES_PATH=$(cd $(dirname $0);pwd)

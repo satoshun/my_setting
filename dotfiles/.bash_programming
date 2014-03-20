@@ -4,7 +4,6 @@ function current_branch() {
 }
 
 # start git
-alias github_pull_request_open='git status | ~/SkyDrive/repository/utility/web/github_pull_request_open'
 alias ggpull='git pull origin $(current_branch)'
 alias gl='git pull'
 alias glc='git pull origin $(current_branch)'
