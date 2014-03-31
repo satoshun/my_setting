@@ -78,7 +78,8 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/opt/chef/embedded/bin:$PATH
 
 ## golang
-export GOPATH=$HOME/git/my/golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 ## ansible & vagrant
 export ANSIBLE_HOSTS=~/ansible_hosts
