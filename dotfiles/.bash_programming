@@ -83,3 +83,14 @@ export GOPATH=$HOME/git/my/golang
 ## ansible & vagrant
 export ANSIBLE_HOSTS=~/ansible_hosts
 export PATH=~/git/my/etc/my_setting/vagrant/:$PATH
+
+
+## etc
+
+function alc() {
+    if [ $ != 0 ]; then
+        w3m "http://eow.alc.co.jp/$*/UTF-8/?ref=sa"
+    else
+        w3m "http://www.alc.co.jp/"
+    fi
+}
