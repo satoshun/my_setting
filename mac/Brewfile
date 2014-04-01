@@ -1,0 +1,66 @@
+update
+upgrade
+
+
+install ack
+install autoconf
+install automake
+install bash-completion
+install boot2docker
+install git
+install go
+install gradle
+install groonga
+install imagemagick
+install jpeg
+install libmemcached
+install libpng
+install libtool
+install libxml2
+install lv
+install memcached
+install mongodb
+install mysql
+install nginx
+install nkf
+install node
+install phantomjs
+install pkg-config
+install pyqt5
+install python3
+install qt
+install rbenv
+install readline
+install redis
+install ruby-build
+install the_silver_searcher
+install tig
+install tmux
+install tree
+
+# cask
+tap phinze/homebrew-cask
+install brew-cask
+
+cask install alfred
+cask install android-studio
+cask install bettertouchtool
+cask install dash
+cask install dropbox
+cask install eclipse-ide
+cask install evernote
+cask install firefox
+cask install genymotion
+cask install gimp
+cask install google-chrome
+cask install hipchat
+cask install iterm2
+cask install java
+cask install keyremap4macbook
+cask install sourcetree
+cask install vagrant
+cask install virtualbox
+cask install vlc
+cask install xtrafinder
+
+cleanup
