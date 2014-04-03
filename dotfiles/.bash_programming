@@ -85,6 +85,8 @@ export PATH=$PATH:$GOPATH/bin
 export ANSIBLE_HOSTS=~/ansible_hosts
 export PATH=~/git/my/etc/my_setting/vagrant/:$PATH
 
+## mac
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ## etc
 
