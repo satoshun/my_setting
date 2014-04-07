@@ -61,7 +61,7 @@ alias ipy="ipython"
 
 export PATH=$PATH:~/git/my/utility/src
 source ~/git/my/utility/src/comp
-source /usr/local/bin/subpro_completion
+source /usr/local/bin/__subpro_completion
 alias ser='python -m CGIHTTPServer'
 
 ### mongodb
