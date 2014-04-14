@@ -14,6 +14,7 @@ SYMLINK_LIST="
 .gradle
 .agignore
 .jshintrc
+.tern-project
 "
 
 DOTFILES_PATH=$(cd $(dirname $0);pwd)
