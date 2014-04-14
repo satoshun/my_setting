@@ -34,6 +34,8 @@ export PATH=$PATH:/usr/local/bin
 export HISTSIZE=2000
 
 ### android
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
 export PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ Studio.app/sdk/platform-tools
 alias monitor='/Applications/Android\ Studio.app/sdk/tools/monitor'
 
