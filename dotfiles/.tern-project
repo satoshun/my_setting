@@ -6,8 +6,14 @@
       "underscore"
     ],
     "plugins": {
-      "angular": "./",
-      "requirejs": "./",
-      "node": "./"
+      "angular": {
+        "baseURL": "./"
+      },
+      "requirejs": {
+        "baseURL": "./"
+      },
+      "node": {
+        "baseURL": "./"
+      }
     }
 }
