@@ -62,6 +62,8 @@ cask install vagrant
 cask install virtualbox
 cask install vlc
 cask install xtrafinder
+cask install anki
+cask install tunnelblick
 
 # cask alfred link
 
