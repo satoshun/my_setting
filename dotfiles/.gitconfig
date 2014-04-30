@@ -54,6 +54,7 @@
     a = !git --no-pager la -n 15
     sp = stash pop
     fix = commit --amend
+    current = rev-parse --abbrev-ref HEAD
 [rerere]
     enabled = true
 [branch]
