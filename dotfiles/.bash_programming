@@ -63,7 +63,6 @@ alias ipy="ipython"
 
 export PATH=$PATH:~/git/my/utility/src
 source ~/git/my/utility/src/comp
-source /usr/local/bin/__subpro_completion
 alias ser='python -m CGIHTTPServer'
 
 ### mongodb
@@ -103,6 +102,9 @@ if [ -f `brew --prefix`/etc/bash_completion.d/pip ]; then
 fi
 if [ -f `brew --prefix`/etc/bash_completion.d/gem ]; then
     source `brew --prefix`/etc/bash_completion.d/gem
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/subpro_completion ]; then
+    source `brew --prefix`/etc/bash_completion.d/subpro_completion
 fi
 
 ## etc

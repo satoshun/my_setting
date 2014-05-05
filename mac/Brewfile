@@ -70,6 +70,10 @@ install vagrant-completion
 install pip-completion
 install gem-completion
 
+tap satoshun/commands
+install subpro
+install subpro-completion
+
 # cask alfred link
 
 cleanup
