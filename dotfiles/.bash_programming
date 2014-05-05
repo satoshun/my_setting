@@ -94,6 +94,17 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 ## commands
 alias ls="ls -G"
 
+## completion
+if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
+    source `brew --prefix`/etc/bash_completion.d/vagrant
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/pip ]; then
+    source `brew --prefix`/etc/bash_completion.d/pip
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/gem ]; then
+    source `brew --prefix`/etc/bash_completion.d/gem
+fi
+
 ## etc
 
 function alc() {
