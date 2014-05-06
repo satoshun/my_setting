@@ -3,6 +3,7 @@ export LANG=en_US.UTF-8
 . ~/.bash_common
 . ~/.bash_programming
 
+
 ##
 # Your previous /Users/satouhayabusa/.bash_profile file was backed up as /Users/satouhayabusa/.bash_profile.macports-saved_2012-09-03_at_10:05:30
 ##

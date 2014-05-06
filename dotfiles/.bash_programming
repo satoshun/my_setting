@@ -1,43 +1,18 @@
-function current_branch() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  echo ${ref#refs/heads/}
-}
-
-# start git
-alias ggpull='git pull origin $(current_branch)'
-alias gl='git pull'
-alias glc='git pull origin $(current_branch)'
-alias ggpush='git push origin $(current_branch)'
-alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
-alias gst="git status"
-alias gsp="git stash pop"
-alias gsa="git stash"
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
+EDITOR='Sublime Text'
 NAME='HOME'
 
-# export GIT_PS1_SHOWUNTRACKEDFILES=1
-# export GIT_PS1_SHOWDIRTYSTATE=1
-# export GIT_PS1_SHOWSTASHSTATE=1
-if [ -f $BASH_COMPLETION_DIR/git-completion.bash ]; then
-    PS1='\[\e[0;37m\]${NAME}\[\e[0;37m\][\t]\[\e[0;37m\]: \[\e[1;37m\]\w\n\[\e[1;33m\]h:\! j:\j\[\e[0;36m\]$(__git_ps1) \[\e[0;34m\]\$\[\e[m\] '
-else
-    PS1='\[\e[0;37m\]${NAME}\[\e[0;37m\][\t]\[\e[0;37m\]: \[\e[1;37m\]\w\n\[\e[1;33m\]h:\! j:\j \[\e[0;34m\]\$\[\e[m\] '
-fi
-
-### end git
 
 ### basic
 export PATH=$PATH:/usr/local/bin
 export HISTSIZE=2000
+
 
 ### android
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
 export PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ Studio.app/sdk/platform-tools
 alias monitor='/Applications/Android\ Studio.app/sdk/tools/monitor'
+
 
 ### etc
 alias l='ls'
@@ -49,51 +24,61 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source `which virtualenvwrapper.sh`
 export pylint_path=/usr/local/bin
-
-## ruby
-export GEM_HOME=$HOME/gems
-export PATH=$GEM_HOME/bin:$PATH
-
-# export LD_LIBRARY_PATH=/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/PySide-1.3.0dev-py3.3.egg/PySide
 export LDFLAGS=-L/usr/local/lib/
 export CFLAGS=-I/usr/local/include/
 alias ipy="ipython"
 
-### custom
 
+### ruby
+export GEM_HOME=$HOME/gems
+export PATH=$GEM_HOME/bin:$PATH
+
+
+### custom
 export PATH=$PATH:~/git/my/utility/src
 source ~/git/my/utility/src/comp
 alias ser='python -m CGIHTTPServer'
+
 
 ### mongodb
 MONGODB_PATH=~/mongo/bin/
 export PATH=$MONGODB_PATH:$PATH
 
-## gradle
+
+### gradle
 export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 
 
-## nodeprew
+### nodeprew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-## chef
+
+### chef
 export PATH=/opt/chef/embedded/bin:$PATH
 
-## golang
+
+### golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-## ansible & vagrant
+
+### ansible & vagrant
 export ANSIBLE_HOSTS=~/ansible_hosts
 export PATH=~/git/my/etc/my_setting/vagrant/:$PATH
 
-## mac
+
+### mac
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-## commands
+
+### commands
 alias ls="ls -G"
 
-## completion
+
+### completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    source `brew --prefix`/etc/bash_completion
+fi
 if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
     source `brew --prefix`/etc/bash_completion.d/vagrant
 fi
@@ -107,8 +92,8 @@ if [ -f `brew --prefix`/etc/bash_completion.d/subpro_completion ]; then
     source `brew --prefix`/etc/bash_completion.d/subpro_completion
 fi
 
-## etc
 
+### etc
 function alc() {
     if [ $ != 0 ]; then
         w3m "http://eow.alc.co.jp/$*/UTF-8/?ref=sa"
