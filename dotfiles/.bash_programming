@@ -1,3 +1,5 @@
+#!/bin/bash
+
 EDITOR='Sublime Text'
 NAME='HOME'
 
@@ -95,7 +97,8 @@ fi
 
 ### etc
 function alc() {
-    if [ $ != 0 ]; then
+    if [ $# != 0 ]; then
+        say "$*"
         w3m "http://eow.alc.co.jp/$*/UTF-8/?ref=sa"
     else
         w3m "http://www.alc.co.jp/"
