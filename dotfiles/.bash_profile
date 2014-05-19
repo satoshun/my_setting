@@ -1,7 +1,6 @@
 export LANG=en_US.UTF-8
 
-. ~/.bash_common
-. ~/.bash_programming
+source ~/.bash_common
 
 
 ##
@@ -30,3 +29,52 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 ## mecab
 export PATH=/usr/local/bin/mecab/bin:$PATH
+
+
+## editor
+EDITOR='Sublime Text'
+
+alias sub='open -a "Sublime Text"'
+alias pypi="python setup.py register; python setup.py sdist upload"
+alias pypi3="python3 setup.py register; python3 setup.py sdist upload"
+alias ctags="`brew --prefix`/bin/ctags"
+
+
+### android
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
+export PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ Studio.app/sdk/platform-tools
+alias monitor='/Applications/Android\ Studio.app/sdk/tools/monitor'
+
+
+### mongodb
+MONGODB_PATH=~/mongo/bin/
+export PATH=$MONGODB_PATH:$PATH
+
+
+### gradle
+export GRADLE_OPTS="-Dorg.gradle.daemon=true"
+
+
+### nodeprew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+
+### ansible & vagrant
+export ANSIBLE_HOSTS=~/ansible_hosts
+export PATH=~/git/my/etc/my_setting/vagrant/:$PATH
+
+
+### homebrew
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+
+### etc
+function alc() {
+    if [ $# != 0 ]; then
+        say "$*"
+        w3m "http://eow.alc.co.jp/$*/UTF-8/?ref=sa"
+    else
+        w3m "http://www.alc.co.jp/"
+    fi
+}

@@ -3,7 +3,6 @@
 SYMLINK_LIST="
 .bash_profile
 .bash_common
-.bash_programming
 .bashrc
 .gitconfig
 .gitignore_global

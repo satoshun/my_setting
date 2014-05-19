@@ -1,4 +1,66 @@
 #!/bin/bash
+NAME='HOME'
+
+
+### basic
+export PATH=$PATH:/usr/local/bin
+export HISTSIZE=2000
+
+
+### etc
+alias l='ls'
+alias q='exit'
+
+
+### python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source `which virtualenvwrapper.sh`
+export pylint_path=/usr/local/bin
+export LDFLAGS=-L/usr/local/lib/
+export CFLAGS=-I/usr/local/include/
+alias ipy="ipython"
+
+
+### ruby
+export GEM_HOME=$HOME/gems
+export PATH=$GEM_HOME/bin:$PATH
+
+
+### custom
+alias ser='python -m CGIHTTPServer'
+
+
+### chef
+export PATH=/opt/chef/embedded/bin:$PATH
+
+
+### golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+
+### commands
+alias ls="ls -G"
+
+
+### completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    source `brew --prefix`/etc/bash_completion
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
+    source `brew --prefix`/etc/bash_completion.d/vagrant
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/pip ]; then
+    source `brew --prefix`/etc/bash_completion.d/pip
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/gem ]; then
+    source `brew --prefix`/etc/bash_completion.d/gem
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/subpro_completion ]; then
+    source `brew --prefix`/etc/bash_completion.d/subpro_completion
+fi
+
 
 function current_branch() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
@@ -31,8 +93,4 @@ fi
 alias cl='clear'
 alias l='ls'
 alias ll='ls -l'
-alias sub='open -a "Sublime Text"'
 alias p="pwd"
-alias pypi="python setup.py register; python setup.py sdist upload"
-alias pypi3="python3 setup.py register; python3 setup.py sdist upload"
-alias ctags="`brew --prefix`/bin/ctags"
