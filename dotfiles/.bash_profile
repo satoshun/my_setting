@@ -31,7 +31,6 @@ PATH=/usr/local/bin/mecab/bin:$PATH
 ## editor
 EDITOR='Sublime Text'
 
-alias sub='open -a "Sublime Text"'
 alias pypi="python setup.py register; python setup.py sdist upload"
 alias pypi3="python3 setup.py register; python3 setup.py sdist upload"
 alias ctags="`brew --prefix`/bin/ctags"
@@ -78,4 +77,6 @@ function alc() {
 
 ### timezone
 export TZ="Etc/UTC"
+
+PATH=$PATH:~/bin
 export PATH

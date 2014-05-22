@@ -24,3 +24,6 @@ do
     rm -fr ~/$FILE
     ln -s $DOTFILES_PATH/$FILE ~/$FILE
 done
+
+mkdir -p ~/bin
+sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin
