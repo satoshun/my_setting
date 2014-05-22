@@ -10,25 +10,22 @@ source ~/.bash_common
 # Finished adapting your PATH environment variable for use with MacPorts.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export PATH
-
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
 
 ##
 # Your previous /Users/satouhayabusa/.bash_profile file was backed up as /Users/satouhayabusa/.bash_profile.macports-saved_2013-10-07_at_11:19:58
 ##
 
 # MacPorts Installer addition on 2013-10-07_at_11:19:58: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/shims:$PATH"
+PATH="$HOME/.rbenv/shims:$PATH"
 
 ## mecab
-export PATH=/usr/local/bin/mecab/bin:$PATH
+PATH=/usr/local/bin/mecab/bin:$PATH
 
 
 ## editor
@@ -43,13 +40,13 @@ alias ctags="`brew --prefix`/bin/ctags"
 ### android
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
-export PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ Studio.app/sdk/platform-tools
+PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ Studio.app/sdk/platform-tools
 alias monitor='/Applications/Android\ Studio.app/sdk/tools/monitor'
 
 
 ### mongodb
 MONGODB_PATH=~/mongo/bin/
-export PATH=$MONGODB_PATH:$PATH
+PATH=$MONGODB_PATH:$PATH
 
 
 ### gradle
@@ -57,12 +54,12 @@ export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 
 
 ### nodeprew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+PATH=$HOME/.nodebrew/current/bin:$PATH
 
 
 ### ansible & vagrant
 export ANSIBLE_HOSTS=~/ansible_hosts
-export PATH=~/git/my/etc/my_setting/vagrant/:$PATH
+PATH=~/git/my/etc/my_setting/vagrant/:$PATH
 
 
 ### homebrew
@@ -81,3 +78,4 @@ function alc() {
 
 ### timezone
 export TZ="Etc/UTC"
+export PATH
