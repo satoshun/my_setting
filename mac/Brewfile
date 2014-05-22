@@ -74,7 +74,7 @@ tap satoshun/commands
 install subpro
 install subpro-completion
 
-# cask alfred link
+cask alfred link
 
 cleanup
 link python

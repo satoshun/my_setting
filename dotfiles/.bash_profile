@@ -78,3 +78,6 @@ function alc() {
         w3m "http://www.alc.co.jp/"
     fi
 }
+
+### timezone
+export TZ="Etc/UTC"
