@@ -15,6 +15,7 @@ shalias
 shenv
 tern-project
 tigrc
+zaw
 zshrc
 "
 
