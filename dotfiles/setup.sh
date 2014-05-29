@@ -1,21 +1,23 @@
 #!/bin/sh
 
 SYMLINK_LIST="
-bash_profile
+agignore
 bash_common
+bash_profile
 bashrc
+codeintel/config
 gitconfig
 gitignore_global
-tigrc
+inputrc
 mongorc.js
 my.cnf
-codeintel/config
-agignore
-tern-project
 shalias
 shenv
+tern-project
+tigrc
 zshrc
 "
+
 # .jshintrc
 # .gradle
 
