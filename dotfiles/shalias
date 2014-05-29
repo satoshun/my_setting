@@ -1,0 +1,28 @@
+alias pypi="python setup.py register; python setup.py sdist upload"
+alias pypi3="python3 setup.py register; python3 setup.py sdist upload"
+alias ctags="`brew --prefix`/bin/ctags"
+
+alias monitor='/Applications/Android\ Studio.app/sdk/tools/monitor'
+
+alias l='ls'
+alias ll='ls -l'
+alias ls="ls -G"
+alias p="pwd"
+
+alias q='exit'
+alias ipy="ipython"
+
+alias ser='python -m CGIHTTPServer'
+
+
+# Git
+alias ggpull='git pull origin $(current_branch)'
+alias gl='git pull'
+alias glc='git pull origin $(current_branch)'
+alias ggpush='git push origin $(current_branch)'
+alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
+alias gst="git status"
+alias gsp="git stash pop"
+alias gsa="git stash"
+alias git-conflict='git status | python ~/SkyDrive/repository/utility/git/git_conflict_open.py'
+alias git-untracked-delete='git status | python ~/SkyDrive/repository/utility/git/git_untracked_delete.py'

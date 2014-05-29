@@ -1,47 +1,7 @@
 #!/bin/bash
 NAME='HOME'
 
-
-### basic
-export PATH=$PATH:/usr/local/bin
-export HISTSIZE=2000
-
-
-### etc
-alias l='ls'
-alias q='exit'
-
-
-### python
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source `which virtualenvwrapper.sh`
-export pylint_path=/usr/local/bin
-export LDFLAGS=-L/usr/local/lib/
-export CFLAGS=-I/usr/local/include/
-alias ipy="ipython"
-
-
-### ruby
-export GEM_HOME=$HOME/gems
-export PATH=$GEM_HOME/bin:$PATH
-
-
-### custom
-alias ser='python -m CGIHTTPServer'
-
-
-### chef
-export PATH=/opt/chef/embedded/bin:$PATH
-
-
-### golang
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-
-### commands
-alias ls="ls -G"
+export HISTSIZE=200000
 
 
 ### completion
@@ -67,19 +27,6 @@ function current_branch() {
     echo ${ref#refs/heads/}
 }
 
-
-# start git
-alias ggpull='git pull origin $(current_branch)'
-alias gl='git pull'
-alias glc='git pull origin $(current_branch)'
-alias ggpush='git push origin $(current_branch)'
-alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
-alias gst="git status"
-alias gsp="git stash pop"
-alias gsa="git stash"
-alias git-conflict='git status | python ~/SkyDrive/repository/utility/git/git_conflict_open.py'
-alias git-untracked-delete='git status | python ~/SkyDrive/repository/utility/git/git_untracked_delete.py'
-
 # export GIT_PS1_SHOWUNTRACKEDFILES=1
 # export GIT_PS1_SHOWDIRTYSTATE=1
 # export GIT_PS1_SHOWSTASHSTATE=1
@@ -88,9 +35,3 @@ if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
 else
     PS1='\[\e[0;37m\]${NAME}\[\e[0;37m\][\t]\[\e[0;37m\]: \[\e[1;37m\]\w\n\[\e[1;33m\]h:\! j:\j \[\e[0;34m\]\$\[\e[m\] '
 fi
-
-
-alias cl='clear'
-alias l='ls'
-alias ll='ls -l'
-alias p="pwd"

@@ -12,6 +12,8 @@ my.cnf
 codeintel/config
 agignore
 tern-project
+shalias
+shenv
 zshrc
 "
 # .jshintrc
@@ -31,3 +33,5 @@ done
 
 # zsh
 # curl -L http://install.ohmyz.sh | sh
+
+# curl -sSL https://get.rvm.io | bash
