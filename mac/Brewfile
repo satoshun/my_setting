@@ -37,6 +37,7 @@ install the_silver_searcher
 install tig
 install tmux
 install tree
+install zsh
 
 # cask
 tap phinze/homebrew-cask
