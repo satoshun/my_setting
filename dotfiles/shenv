@@ -66,10 +66,10 @@ PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 ##
 
 # MacPorts Installer addition on 2013-10-07_at_11:19:58: adding an appropriate PATH variable for use with MacPorts.
-PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
-eval "$(rbenv init -)"
-PATH="$HOME/.rbenv/shims:$PATH"
+# eval "$(rbenv init -)"
+# PATH="$HOME/.rbenv/shims:$PATH"
 
 ## mecab
 PATH=/usr/local/bin/mecab/bin:$PATH

@@ -3,7 +3,6 @@ NAME='HOME'
 
 export HISTSIZE=200000
 
-
 ### completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     source `brew --prefix`/etc/bash_completion

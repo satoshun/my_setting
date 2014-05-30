@@ -80,3 +80,5 @@ export PATH="/Users/satouhayabusa/git/my/etc/my_setting/vagrant/:/Users/satouhay
 . $HOME/.shalias
 . $HOME/.shenv
 . $HOME/.zaw
+
+setopt nolistbeep
