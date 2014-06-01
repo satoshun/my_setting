@@ -52,7 +52,7 @@ ZSH_THEME="3den"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(z zaw git osx ruby python vagrant gradle bower brew brew-cask celery coffee cp docker fabric gem github golang history jump npm sublime virtualenv virtualenvwrapper)
+plugins=(z zaw git osx ruby python vagrant gradle bower brew brew-cask celery coffee cp docker fabric gem github golang history jump npm sublime virtualenv virtualenvwrapper zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -80,5 +80,9 @@ export PATH="/Users/satouhayabusa/git/my/etc/my_setting/vagrant/:/Users/satouhay
 . $HOME/.shalias
 . $HOME/.shenv
 . $HOME/.zaw
+
+if [ -f `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion ]; then
+    source `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion
+fi
 
 setopt nolistbeep

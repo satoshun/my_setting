@@ -78,6 +78,7 @@ install gem-completion
 tap satoshun/commands
 install subpro
 install subpro-completion
+install subpro-zcompletion
 
 cask alfred link
 
