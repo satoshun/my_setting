@@ -79,6 +79,11 @@
 	trustExitCode = false
 [merge]
 	tool = sublime
+	conflictstyle = diff3
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
