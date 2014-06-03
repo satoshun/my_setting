@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 SYMLINK_LIST="
 agignore
@@ -22,13 +22,11 @@ zshrc
 # .jshintrc
 # .gradle
 
-DOTFILES_PATH=$(cd $(dirname $0);pwd)
 mkdir -p ~/.codeintel
 
-for FILE in ${SYMLINK_LIST};
+for path in ${SYMLINK_LIST};
 do
-    rm -rf ~/.${FILE}
-    ln -s ${DOTFILES_PATH}/${FILE} ~/.${FILE}
+    ln -sf ${HOME}/${path} ~/.${path}
 done
 
 # mkdir -p ~/bin

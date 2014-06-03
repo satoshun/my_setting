@@ -18,6 +18,7 @@
     branch = auto
     grep = auto
     ui = auto
+    interactive = auto
 [color "branch"]
     current = yellow reverse
     local = yellow
@@ -68,6 +69,9 @@
     sp = stash pop
     fix = commit --amend
     current = rev-parse --abbrev-ref HEAD
+    branch-root = merge-base master HEAD
+    review = !tig --no-walk --reverse -w $(git branch-root)..HEAD
+    delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 [rerere]
     enabled = true
 [branch]
@@ -87,3 +91,17 @@
     log = diff-highlight | less
     show = diff-highlight | less
     diff = diff-highlight | less
+[github]
+    user = satoshun
+[diff "json"]
+    textconv = "jq -M ."
+[url "git@github.com:satoshun/"]
+    insteadof = gh:
+[gui]
+    encoding = utf-8
+[grep]
+    lineNumbers = true
+[web]
+    browser = open
+[browser "chrome"]
+    cmd = open -a 'Google Chrome.app'
