@@ -26,3 +26,6 @@ alias gsp="git stash pop"
 alias gsa="git stash"
 alias git-conflict='git status | python ~/SkyDrive/repository/utility/git/git_conflict_open.py'
 alias git-untracked-delete='git status | python ~/SkyDrive/repository/utility/git/git_untracked_delete.py'
+
+# mac
+alias strace='dtruss'
