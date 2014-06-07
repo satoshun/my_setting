@@ -38,6 +38,7 @@ install the_silver_searcher
 install tig
 install tmux
 install tree
+install mecab
 
 # zsh
 install z
