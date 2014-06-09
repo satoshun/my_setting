@@ -17,16 +17,18 @@ tern-project
 tigrc
 zaw
 zshrc
+tmux.conf
 "
 
 # .jshintrc
 # .gradle
 
 mkdir -p ~/.codeintel
+DOTFILES_PATH=$(cd $(dirname $0);pwd)
 
-for path in ${SYMLINK_LIST};
+for file in ${SYMLINK_LIST};
 do
-    ln -sf ${HOME}/${path} ~/.${path}
+    ln -sf ${DOTFILES_PATH}/${file} ~/.${file}
 done
 
 # mkdir -p ~/bin

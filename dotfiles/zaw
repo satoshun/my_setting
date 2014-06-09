@@ -55,7 +55,7 @@ bindkey '^Qq' zaw
 
 bindkey '^R' zaw-history
 bindkey '^v' zaw-cdr
-bindkey '^t' zaw-git-recent-branches
+bindkey '^s' zaw-git-recent-branches
 bindkey '^Qt' zaw-cdd
 bindkey '^Qd' zaw-dirstack
 bindkey '^Qgf' zaw-git-files
