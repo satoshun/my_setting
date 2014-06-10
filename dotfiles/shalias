@@ -29,3 +29,9 @@ alias git-untracked-delete='git status | python ~/SkyDrive/repository/utility/gi
 
 # mac
 alias strace='dtruss'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
