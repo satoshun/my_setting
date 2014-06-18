@@ -39,6 +39,7 @@ install tig
 install tmux
 install tree
 install mecab
+install reattach-to-user-namespace
 
 # zsh
 install z
