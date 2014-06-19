@@ -19,7 +19,6 @@ export PATH=/opt/chef/embedded/bin:$PATH
 
 ### golang
 export GOPATH=$HOME/go
-export GOROOT=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 ### timezone
