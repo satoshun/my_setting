@@ -83,7 +83,12 @@ install subpro
 install subpro-completion
 install subpro-zcompletion
 
-cask alfred link
+# science
+tap homebrew/science
+install gcc
+cask install mactex
+install octave
 
+cask alfred link
 cleanup
 link python
