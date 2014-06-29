@@ -79,6 +79,7 @@ export LANG=en_US.UTF-8
 
 . $HOME/.shalias
 . $HOME/.shenv
+. $HOME/.shfunc
 . $HOME/.zaw
 
 if [ -f `brew --prefix`/etc/zsh_completion.d/subpro_zcompletion ]; then

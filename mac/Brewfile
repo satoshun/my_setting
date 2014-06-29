@@ -8,7 +8,7 @@ install automake
 install bash-completion
 install boot2docker
 install git
-install go
+install go --cross-compile-all
 install gradle
 install groonga
 install imagemagick
@@ -27,9 +27,9 @@ install nkf
 install node
 install phantomjs
 install pkg-config
+install qt
 install pyqt5
 install python3
-install qt
 install rbenv
 install readline
 install redis
@@ -89,6 +89,9 @@ install gcc
 cask install mactex
 install octave
 
+cask install google-japanese-ime
+
 cask alfred link
-cleanup
 link python
+linkapps
+cleanup

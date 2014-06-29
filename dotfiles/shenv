@@ -85,7 +85,7 @@ PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ St
 
 
 ### mongodb
-MONGODB_PATH=~/mongo/bin/
+MONGODB_PATH=~/mongo/bin
 PATH=$MONGODB_PATH:$PATH
 
 ### octave

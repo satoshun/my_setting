@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 SYMLINK_LIST="
 agignore
@@ -13,6 +13,7 @@ mongorc.js
 my.cnf
 shalias
 shenv
+shfunc
 tern-project
 tigrc
 zaw
