@@ -97,6 +97,8 @@
     textconv = "jq -M ."
 [url "git@github.com:satoshun/"]
     insteadof = gh:
+[url "git@bitbucket.org:satoshun/"]
+    insteadof = bit:
 [gui]
     encoding = utf-8
 [grep]
