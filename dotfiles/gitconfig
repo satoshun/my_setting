@@ -95,9 +95,9 @@
     user = satoshun
 [diff "json"]
     textconv = "jq -M ."
-[url "git@github.com:satoshun/"]
+[url "git@github.com:satoshun"]
     insteadof = gh:
-[url "git@bitbucket.org:satoshun/"]
+[url "git@bitbucket.org:satoshun"]
     insteadof = bit:
 [gui]
     encoding = utf-8
