@@ -88,9 +88,9 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [pager]
-    log = diff-highlight | less
-    show = diff-highlight | less
-    diff = diff-highlight | less
+    log = diff-highlight
+    show = diff-highlight
+    diff = diff-highlight
 [github]
     user = satoshun
 [diff "json"]
