@@ -72,6 +72,7 @@ cask install vlc
 cask install xtrafinder
 cask install anki
 cask install tunnelblick
+cask install soundflower
 
 tap homebrew/completions
 install vagrant-completion
