@@ -36,3 +36,5 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
 alias st2="open -a 'Sublime Text 2'"
+alias st3="open -a 'Sublime Text'"
+alias mux=tmuxinator

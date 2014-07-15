@@ -12,6 +12,7 @@ inputrc
 mongorc.js
 my.cnf
 shalias
+tmuxinator
 shenv
 shfunc
 tern-project
