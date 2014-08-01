@@ -42,3 +42,6 @@ done
 # curl -sSL https://get.rvm.io | bash
 
 # curl -o diff-highlight https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight
+
+npm install -g jshint csslint 
+sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
