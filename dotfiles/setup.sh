@@ -13,12 +13,12 @@ mongorc.js
 my.cnf
 shalias
 tmuxinator
-shenv
 shfunc
 tern-project
 tigrc
 zaw
 zshrc
+zshenv
 tmux.conf
 "
 

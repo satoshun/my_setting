@@ -78,7 +78,7 @@ export LANG=en_US.UTF-8
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 . $HOME/.shalias
-. $HOME/.shenv
+. $HOME/.zshenv
 . $HOME/.shfunc
 . $HOME/.zaw
 
