@@ -20,6 +20,7 @@ zaw
 zshrc
 zshenv
 tmux.conf
+csscomb.json
 "
 
 # .jshintrc
@@ -43,5 +44,5 @@ done
 
 # curl -o diff-highlight https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight
 
-npm install -g jshint csslint 
-sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
+# npm install -g jshint csslint 
+# sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
