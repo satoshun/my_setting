@@ -73,7 +73,9 @@ cask install xtrafinder
 cask install anki
 cask install tunnelblick
 cask install soundflower
+cask install google-japanese-ime
 
+# completion
 tap homebrew/completions
 install vagrant-completion
 install pip-completion
@@ -90,7 +92,9 @@ install gcc
 cask install mactex
 install octave
 
-cask install google-japanese-ime
+# sublime
+install homebrew/dupes/tidy
+
 
 cask alfred link
 link python
