@@ -8,6 +8,7 @@ install automake
 install bash-completion
 install boot2docker
 install git
+install gyazo
 install go --cross-compile-all
 install gradle
 install groonga
