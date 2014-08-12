@@ -75,6 +75,7 @@ cask install anki
 cask install tunnelblick
 cask install soundflower
 cask install google-japanese-ime
+cask install pandoc
 
 # completion
 tap homebrew/completions
