@@ -46,3 +46,7 @@ done
 
 # npm install -g jshint csslint 
 # sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
+
+## ricty
+# cp -f /usr/local/Cellar/ricty/3.2.3/share/fonts/Ricty*.ttf ~/Library/Fonts/
+# fc-cache -vf

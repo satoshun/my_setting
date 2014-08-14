@@ -96,6 +96,8 @@ install octave
 
 # sublime
 install homebrew/dupes/tidy
+tap sanemat/font
+install ricty
 
 
 cask alfred link
