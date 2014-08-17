@@ -180,3 +180,9 @@ function zaw-src-git-log-append-to-buffer () {
 }
 # Register this src to zaw.
 zaw-register-src -n git-log zaw-src-git-log
+
+
+setopt hist_save_no_dups
+setopt hist_verify
+setopt hist_reduce_blanks
+setopt hist_expand

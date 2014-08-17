@@ -40,6 +40,7 @@ install tig
 install tmux
 install tree
 install mecab
+install cairo
 install reattach-to-user-namespace
 
 # zsh
@@ -76,6 +77,7 @@ cask install tunnelblick
 cask install soundflower
 cask install google-japanese-ime
 cask install pandoc
+cask install bittorrent-sync
 
 # completion
 tap homebrew/completions

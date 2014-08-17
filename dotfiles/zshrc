@@ -52,7 +52,7 @@ ZSH_THEME="3den"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(docker z zaw git osx ruby python vagrant gradle bower brew brew-cask celery coffee cp docker fabric gem github golang history jump npm sublime virtualenv virtualenvwrapper zsh-syntax-highlighting)
+plugins=(docker z zaw git osx ruby python vagrant gradle bower brew brew-cask celery coffee cp docker fabric gem github golang history jump npm sublime virtualenv virtualenvwrapper zsh-syntax-highlighting ansible)
 
 source $ZSH/oh-my-zsh.sh
 

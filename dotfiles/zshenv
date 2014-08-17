@@ -91,3 +91,8 @@ PATH=$MONGODB_PATH:$PATH
 
 ### octave
 export PATH=/usr/texbin:$PATH
+
+
+### calibre
+PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
