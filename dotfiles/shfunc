@@ -7,4 +7,5 @@ brewupdate()
     brew upgrade
     brew cleanup
     brew cask cleanup
+    cd "~/SkyDrive/preference/Sublime Text 3" && sh clear.sh;
 }
