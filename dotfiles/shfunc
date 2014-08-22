@@ -11,5 +11,5 @@ brewupdate()
     brew cask cleanup
 
     echo "Remove garbage of sublime text"
-    cd ~/SkyDrive/preference/Sublime\ Text\ 3/ && sh clear.sh;
+    cd ~/SkyDrive/preference/Sublime\ Text\ 3/ && sh clear.sh && cd -;
 }
