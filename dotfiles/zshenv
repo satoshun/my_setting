@@ -99,5 +99,5 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
 
 ### GoDirectory
-export GO_GIT_PATH=~/Dropbox/git
-export GO_GIT_HOOK_CMD="cd {{.Directory}} && cd ../ && subpro create etc {{.ProjectName}}"
+export GOG_PATH=~/Dropbox/git
+export GOG_HOOK_CMD="cd {{.Directory}} && cd ../ && subpro create etc {{.ProjectName}}"
