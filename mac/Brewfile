@@ -90,7 +90,7 @@ tap satoshun/commands
 install subpro
 install subpro-completion
 install subpro-zcompletion
-install go-git
+install gog
 
 # science
 tap homebrew/science
