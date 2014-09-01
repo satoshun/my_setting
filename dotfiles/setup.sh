@@ -44,9 +44,18 @@ done
 
 # curl -o diff-highlight https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight
 
-# npm install -g jshint csslint 
+# npm install -g jshint csslint
 # sudo easy_install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 ## ricty
 # cp -f /usr/local/Cellar/ricty/3.2.3/share/fonts/Ricty*.ttf ~/Library/Fonts/
 # fc-cache -vf
+
+## digital ocean
+# vagrant plugin install dotenv
+# vagrant plugin install vagrant-digitalocean
+# vagrant plugin install dotenv
+
+## go
+# go get github.com/golang/lint/golint
+# hash -r

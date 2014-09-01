@@ -42,6 +42,7 @@ install tree
 install mecab
 install cairo
 install reattach-to-user-namespace
+install curl-ca-bundle
 
 # zsh
 install z
@@ -89,6 +90,8 @@ tap satoshun/commands
 install subpro
 install subpro-completion
 install subpro-zcompletion
+install gog
+install gitcd
 
 # science
 tap homebrew/science

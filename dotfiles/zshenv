@@ -96,3 +96,8 @@ export PATH=/usr/texbin:$PATH
 ### calibre
 PATH=$PATH:/Applications/calibre.app/Contents/MacOS
 export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
+
+
+### GoDirectory
+export GOG_PATH=~/Dropbox/git
+export GOG_HOOK_CMD="cd {{.Directory}} && cd ../ && subpro create etc {{.ProjectName}}"
