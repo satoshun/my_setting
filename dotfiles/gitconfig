@@ -72,6 +72,7 @@
     branch-root = merge-base master HEAD
     review = !tig --no-walk --reverse -w $(git branch-root)..HEAD
     delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+    cmb = "!f () { git commit -m \"`git rev-parse --abbrev-ref HEAD` $1\" $2;}; f"
 [rerere]
     enabled = true
 [branch]
