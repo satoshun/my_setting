@@ -42,6 +42,7 @@ git@github.com:drone/drone.git
 git@github.com:fantasyshopper/go-apns-proxy.git
 git@github.com:PuerkitoBio/gocrawl.git
 git://github.com/davecheney/golang-crosscompile.git
+git@github.com:jnwhiteh/golang.git
 git@github.com:mindreframer/golang-stuff.git
 git@github.com:mkaz/lanyon.git
 git@github.com:go-martini/martini.git
