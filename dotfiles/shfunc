@@ -12,4 +12,6 @@ brewupdate()
 
     echo "Remove garbage of sublime text"
     cd ~/SkyDrive/preference/Sublime\ Text\ 3/ && sh clear.sh && cd -;
+
+    cd ~/git/my/etc/my_setting/dotfiles; git pull origin master; cd -;
 }
