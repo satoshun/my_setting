@@ -59,3 +59,4 @@ done
 ## go
 # go get github.com/golang/lint/golint
 # hash -r
+# go get code.google.com/p/go.tools/cmd/goimports
