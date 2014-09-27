@@ -15,3 +15,9 @@ brewupdate()
 
     cd ~/git/my/etc/my_setting/dotfiles; git pull origin master; cd -;
 }
+
+topcoder()
+{
+    subpro topcoder
+    cd ~/Dropbox/coder; open ContestAppletProd.jnlp ; cd -;
+}
