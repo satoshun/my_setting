@@ -77,8 +77,15 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-. $HOME/.shalias
+# for android
+export JAVA_HOME=`/usr/libexec/java_home -v "1.7"`
+JAVA8_HOME=`/usr/libexec/java_home -v "1.8"`
+if [ $? -eq 0 ]; then
+    export JAVA8_HOME
+fi
+
 . $HOME/.zshenv
+. $HOME/.shalias
 . $HOME/.shfunc
 . $HOME/.zaw
 

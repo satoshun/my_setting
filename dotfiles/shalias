@@ -43,3 +43,12 @@ alias t="tig"
 # tmux
 alias tm="tmux -CC"
 alias mux=tmuxinator
+
+# java
+alias java8="${JAVA8_HOME}/bin/java"
+alias javac8="${JAVA8_HOME}/bin/javac"
+function javae8()
+{
+    javac8 $1
+    java8 `echo $1 | sed -e s/\.java//`
+}

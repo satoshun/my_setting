@@ -106,9 +106,12 @@ tap sanemat/font
 install ricty
 
 
-brew tap homebrew/dupes
-brew install gdb
+tap homebrew/dupes
+install gdb
 
+# for java
+tap caskroom/versions
+cask install java7
 
 cask alfred link
 link python
