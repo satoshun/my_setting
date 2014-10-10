@@ -1,7 +1,10 @@
 #!/bin/sh
 
+# python
 alias pypi="python setup.py register; python setup.py sdist upload"
 alias pypi3="python3 setup.py register; python3 setup.py sdist upload"
+alias pm="python manage.py"
+
 alias ctags="`brew --prefix`/bin/ctags"
 
 alias monitor='/Applications/Android\ Studio.app/sdk/tools/monitor'
