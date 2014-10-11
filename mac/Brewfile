@@ -26,6 +26,7 @@ install mysql
 install nginx
 install nkf
 install nodebrew
+install wrk
 install phantomjs
 install pkg-config
 install qt
