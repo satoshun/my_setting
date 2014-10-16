@@ -43,6 +43,7 @@ install mecab
 install cairo
 install reattach-to-user-namespace
 install curl-ca-bundle
+install td-agent
 
 # zsh
 install z
