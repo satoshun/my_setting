@@ -7,7 +7,7 @@ alias pm="python manage.py"
 
 alias ctags="`brew --prefix`/bin/ctags"
 
-alias monitor='/Applications/Android\ Studio.app/sdk/tools/monitor'
+alias monitor='~/android-sdk/tools/monitor'
 
 alias l='ls'
 alias ll='ls -l'
