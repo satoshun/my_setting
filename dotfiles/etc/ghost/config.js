@@ -13,9 +13,12 @@ config = {
         url: 'http://blog.s-shun.net/',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'mysql',
             connection: {
-                filename: path.join(__dirname, '/content/data/blog.db')
+                host: 'aaaaa',
+                user: 'root',
+                database: 'blog',
+                charset: 'utf8'
             },
             debug: false
         },
