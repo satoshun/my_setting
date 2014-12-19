@@ -45,6 +45,10 @@ install cairo
 install reattach-to-user-namespace
 install curl-ca-bundle
 install td-agent
+install peco
+
+# android
+install pidcat
 
 # zsh
 install z

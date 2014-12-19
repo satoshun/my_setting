@@ -83,7 +83,7 @@ EDITOR='Sublime Text'
 ### android
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 export ANDROID_NDK_HOME=/usr/local/Cellar/android-ndk/r9d
-PATH=$PATH:/Applications/Android\ Studio.app/sdk/tools:/Applications/Android\ Studio.app/sdk/platform-tools
+PATH=$PATH:~/android-sdk/tools:~/android-sdk/platform-tools
 
 
 ### mongodb
@@ -102,3 +102,4 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 ### GoDirectory
 export GOG_PATH=~/git
 export GOG_HOOK_CMD="cd {{.Directory}} && cd ../ && subpro create etc {{.ProjectName}}"
+export LCS_PATH=~/git
