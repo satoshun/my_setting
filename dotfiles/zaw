@@ -41,7 +41,7 @@ zstyle ':chpwd:*' recent-dirs-max 500 # cdrの履歴を保存する個数
 zstyle ':chpwd:*' recent-dirs-default yes
 zstyle ':completion:*' recent-dirs-insert both
 
-source $HOME/git/my/etc/my_setting/zaw/zaw.zsh
+source $HOME/git/github.com/satoshun/my_setting/zaw/zaw.zsh
 zstyle ':filter-select' case-insensitive yes
 
 ## Basic settings
