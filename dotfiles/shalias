@@ -64,4 +64,5 @@ function javae8()
 
 # for android
 alias and-debug='./gradlew installDebug --daemon'
+alias and-test='./gradlew connectedCheck --daemon'
 alias and-release='./gradlew installRelease --daemon'
