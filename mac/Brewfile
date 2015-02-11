@@ -85,6 +85,7 @@ cask install soundflower
 cask install google-japanese-ime
 cask install pandoc
 cask install bittorrent-sync
+cask install send-to-kindle
 
 # completion
 tap homebrew/completions
