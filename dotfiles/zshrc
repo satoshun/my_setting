@@ -106,3 +106,4 @@ if [ -f ~/bin/genymotion_peco.sh ]; then
     export GENYMOTION_APP_HOME=/Applications/Genymotion.app/
     source ~/bin/genymotion_peco.sh
 fi
+function gi() { curl http://gitignore.io/api/$@ ;}

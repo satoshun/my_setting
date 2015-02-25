@@ -20,7 +20,7 @@ export PATH=/opt/chef/embedded/bin:$PATH
 ### golang
 export GOPATH=$HOME/go
 export GOROOT=`go env GOROOT`
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 ### timezone
 export TZ="Etc/UTC"
