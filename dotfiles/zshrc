@@ -79,10 +79,8 @@ export LANG=en_US.UTF-8
 
 # for android
 export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-JAVA8_HOME=`/usr/libexec/java_home -v "1.8"`
-if [ $? -eq 0 ]; then
-    export JAVA8_HOME
-fi
+export JAVA6_HOME=`/usr/libexec/java_home -v "1.6"`
+export JAVA8_HOME=`/usr/libexec/java_home -v "1.8"`
 
 . $HOME/.zshenv
 . $HOME/.shalias

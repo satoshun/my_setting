@@ -11,7 +11,15 @@ brewupdate()
     brew cask cleanup
 
     echo "Remove garbage of sublime text"
-    cd ~/SkyDrive/preference/Sublime\ Text\ 3/ && sh clear.sh && cd -;
+    cd "/Users/satouhayabusa/Library/Application Support/Sublime Text 3"
+    find . -iregex '.*/__pycache__/.*'
+    find . -iregex '.*/__pycache__/.*' | xargs -I{} rm -r {}
+    find . -iregex '.*\.pyc'
+    find . -iregex '.*\.pyc' | xargs -I{} rm -r {}
+    find . -iregex '.*macbook.*'
+    find . -iregex '.*macbook.*' | xargs -I{} rm -r {}
+    cd -
+
 
     cd ~/git/github.com/satoshun/my_setting; git pull origin master; cd -;
 }
