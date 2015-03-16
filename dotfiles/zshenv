@@ -40,8 +40,7 @@ function alc() {
 }
 
 ### gradle
-export GRADLE_OPTS="-Dorg.gradle.daemon=true"
-
+export GRADLE_OPTS="-Dorg.gradle.daemon=true -Xmx1024m -Xms256m"
 
 ### nodeprew
 PATH=$HOME/.nodebrew/current/bin:$PATH
