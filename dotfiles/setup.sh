@@ -60,3 +60,11 @@ done
 # go get github.com/golang/lint/golint
 # hash -r
 # go get code.google.com/p/go.tools/cmd/goimports
+
+## node
+# npm install -g gulp typescript yo compass browserify jshint
+
+## typescript
+# npm install -g typescript
+# npm install -g tslint
+# npm install -g generator-typescript

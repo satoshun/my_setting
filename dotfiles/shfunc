@@ -5,7 +5,7 @@ brewupdate()
 {
     echo "Update brew packages"
     brew update
-    brew upgrade
+    brew upgrade --all
     brew cask update
     brew cleanup
     brew cask cleanup
