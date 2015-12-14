@@ -1,6 +1,7 @@
 #!/bin/bash
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.nodebrew/current/bin
 
 export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
 export JAVA6_HOME=`/usr/libexec/java_home -v "1.6"`

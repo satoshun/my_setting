@@ -12,3 +12,5 @@ source '/Users/satouhayabusa/google-cloud-sdk/completion.bash.inc'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/Users/satouhayabusa/.nodebrew/current/bin/node:$PATH"
+export PATH="/Users/satouhayabusa/.cabal/bin:$PATH"
